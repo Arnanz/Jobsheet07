@@ -28,6 +28,7 @@ public class WhileGaji02 {
                 gajiLembur = jumlahJamLembur * 75000;
             } else {
                 System.out.println("Jabatan tidak valid");
+                i--;
                 continue;
             }
             

@@ -7,6 +7,7 @@ public class ForKelipatan02 {
         int kelipatan, jumlah, counter, i;
         jumlah = 0;
         counter = 0;
+        double rataRata = 0;
 
         System.out.print("Masukkan bilangan kelipatan (1-9) : ");
         kelipatan = sc.nextInt();
@@ -16,10 +17,12 @@ public class ForKelipatan02 {
             if (i % kelipatan == 0) {
                 jumlah += i;
                 counter++;
+                rataRata = (double) jumlah / counter;
             }
         }
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
         System.out.printf("Total bilangan kelipatan %d dari 1 sampai 50 adalah %d\n", kelipatan, jumlah);
+        System.out.printf("Rata rata bilangan kelipatan %d dari 1 sampai 50 adalah %.2f\n", kelipatan, rataRata);
     }
     
 }
